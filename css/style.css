@@ -1,0 +1,249 @@
+/**/
+
+/* COLORS
+
+cyan light 		#4ccfc1
+cyan medium 	#39c3b4
+cyan dark 		#2da89b
+cyan green 		#3cc395
+
+gray 			#afafaf
+gray light		#e1e1e1
+
+white			#ffffff
+
+*/
+
+body {
+
+}
+
+header, nav, footer, #content {
+	width: 100%;
+}
+
+h1 {
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+h2 {
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+h3 {
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+p {
+	color: #ffffff;
+}
+
+#slider{
+	background-color: #39c3b4;
+}
+
+#featured-header {
+	height: 65px;
+	background-color: #39c3b4;
+}
+
+/* ------------------------------
+    Header
+------------------------------ */
+
+header .group div { /* !!!!!!!!!!! */
+	float:left;
+}
+
+header {
+	padding-top: 20px;
+}
+
+#logo {
+	margin-right: 170px;
+}
+
+.search-input {
+	height: 32px;
+	width: 434px;
+	border: 1px solid #e1e1e1;
+	border-right-width: 0;
+	margin-right: -5px;
+}
+
+.btn-search {
+	height: 32px;
+	width: 40px;
+	background-image: url('../images/magnifier.png');
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	border: 1px solid #e1e1e1;
+	border-left-width: 0;
+}
+
+#search-form {
+	margin-right: 155px;
+}
+
+#cart-link a {
+	text-decoration: none;
+}
+
+#cart-link span {
+	color: #afafaf;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+
+/* ------------------------------
+    Navigation
+------------------------------ */
+
+nav {
+	height: 35px;
+	color: #ffffff;
+	background-color: #4ccfc1;
+}
+
+nav ul{
+    margin: 7 0;
+    padding: 0;
+}
+
+nav ul li{
+    list-style: none;
+    float: left;    
+}
+
+nav ul li a{
+    /*display: block;*/
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    /*font-weight: bold;
+    padding: 15px;
+    border-left: solid 1px #333;*/
+}
+
+/* ------------------------------
+    Content
+------------------------------ */
+
+.btn-shop-big {
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	border: 3px solid #ffffff;
+	border-radius: 5px;
+	padding: 10px 25px;
+}
+
+#desc {
+	float: right;
+	width: 500px;
+}
+
+/* ------------------------------
+    Carousel
+------------------------------ */
+
+#carousel-buttons {
+	width: 100%;
+	text-align: center;
+	background-color: #f0f;
+	margin-bottom: 35px;
+}
+
+.carousel-btn {
+	width: 9px;
+	height: 9px;
+	cursor: pointer;
+	float: left;
+	margin: 0 10px;
+}
+
+.carousel-btn {
+	background-image: url('../images/carousel-btn.png');
+	background-repeat: no-repeat;
+}
+
+.carousel-btn.active {
+	opacity: 0.4;
+}
+
+#categories .row div { /* !!!!!!!!!!! */
+	float: left;
+}
+
+/* ------------------------------
+    
+------------------------------ */
+
+.btn-shop {
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	border-radius: 5px;
+	padding: 10px 25px;
+}
+
+/* ------------------------------
+    Footer
+------------------------------ */
+#link-list {
+	background-color: #39c3b4;
+	padding-top: 40px;
+}
+
+.link-column{
+	float: left;
+	margin-right: 100px;
+}
+
+#link-list ul {
+	margin: 0;
+    padding: 0;
+    padding-left: 5px;
+}
+
+#link-list ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+#link-list ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#copyright {
+	background-color: #2da89b;
+	text-align: center;
+}
+
+
+/* ------------------------------
+    Global
+------------------------------ */
+.group:before,
+.group:after {
+    content: "";
+    display: table;        
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+	width: 1024px;
+	margin: 0 auto;
+    zoom: 1;
+}

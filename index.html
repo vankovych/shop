@@ -2,117 +2,176 @@
 <html lang="en">
     <head>
         <title>Shop</title>
-        <meta charset="UTF-8">        
+        <meta charset="UTF-8">
+
+        <link href="css/vendor/normalize.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <header>
-            <!-- home, search, cart -->
-            <div>
-                <a href="#" title="Home"><img src="" alt="Aditii"></a>
-                <input type="text">
-                <a href="#" title="Search"><img src="" alt="Search"></a>
-                <a href="#" title="Cart"><img src="" alt="Cart"></a>
-                <span>$300</span>
-            </div>
+        <div id="container">
+            <header>
+                <!-- logo, search, cart -->
+                <div class="group">
+                    <div id="logo">
+                        <a href="#">
+                            <img src="images/logo.png" alt="Aditii">
+                        </a>
+                    </div>
+
+                    <div id="search-form">
+                        <input type="text" class="search-input">
+                        <button type="button" class="btn-search"></button>
+                    </div>
+
+                    <div id="cart-link">
+                        <a href="#">
+                            <img src="images/cart.png" alt="Cart">
+                            <span id="price">$300</span>
+                        </a>
+                    </div>
+                </div>
+
+            </header>
 
             <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sale</a></li>
-                    <li><a href="#">Handbags</a></li>
-                    <li><a href="#">Wallets</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Mens store</a></li>
-                    <li><a href="#">Shoes</a></li>
-                    <li><a href="#">Vintage</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact us</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <div>
-            <!-- top goods -->
-            <div>
-                <div>
-                    <img src="" alt="image">
-                    <h1>Cowhide standard crew</h1>
-                    <p>White colorued, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit.</p>
-                    <a href="#">Shop</a>
+                <div class="group">
+                    <ul>
+                        <li><a href="#">Home</a>|</li>
+                        <li><a href="#">Sale</a>|</li>
+                        <li><a href="#">Handbags</a>|</li>
+                        <li><a href="#">Wallets</a>|</li>
+                        <li><a href="#">Accessories</a>|</li>
+                        <li><a href="#">Mens store</a>|</li>
+                        <li><a href="#">Shoes</a>|</li>
+                        <li><a href="#">Vintage</a>|</li>
+                        <li><a href="#">Services</a>|</li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
                 </div>
-                
-                <!-- carousel controls -->
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div> <!-- active -->
-                    <div></div>
+            </nav>            
+
+            <div id="content">
+                <div id="slider">
+                    <div class="group">
+                        <!-- top goods -->
+                        <div>
+                            <img src="images/products/tshirt-big.png" alt="image">
+                            <div id="desc">
+                                <h1>Cowhide<br>standard crew</h1>
+                                <p>White colorued, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit.</p>                            
+                                <a href="#" class="btn-shop-big">Shop now</a>
+                            </div>
+                        </div>
+
+                        <!-- carousel controls -->
+                        <div id="carousel-buttons">
+                            <div class="carousel-btn"><span></span></div>
+                            <div class="carousel-btn"><span></span></div>
+                            <div class="carousel-btn"><span></span></div>
+                            <div class="carousel-btn active"><span></span></div>
+                            <div class="carousel-btn"><span></span></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- top categories -->
+                <div id="categories">
+                    <div class="group">
+                        <div>
+                            <a href="">
+                                <img src="" alt="prev">
+                            </a>
+                        </div>
+
+                        <div>
+                            <img src="" alt="image">
+                            <h3>Branded shoes</h3>
+                            <span>$300</span>
+                            <a href="#" class="">Buy now</a>
+                        </div>                                     
+
+                        <div>
+                            <a href="">
+                                <img src="" alt="next">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="featured-header">
+                    <div class="group">
+                        <h2>Featured products</h2>
+                    </div>                    
+                </div>
+
+                <div class="group">
+                    <div>
+                        <img src="" alt="image">
+                        <h3>Branded shoe</h3>
+                        <span>$300</span>
+                        <button type="button">Buy now</button>
+                    </div>
+
+                    <!-- TODO add the rest products after approve -->
+
                 </div>
             </div>
 
-            <!-- top categories -->
-            <div>
+            <footer>                
+                <div id="link-list">
+                    <div class="group">
+                        <div class="link-column">
+                            <h3>Featured sale</h3>
+                            <ul>
+                                <li><a href="">Lorem ipsum</a></li>
+                                <li><a href="">Pellentesque eu</a></li>
+                                <li><a href="">Mauris pretium</a></li>
+                                <li><a href="">Nam elementum</a></li>
+                                <li><a href="">Aliquam tortor</a></li>
+                            </ul>
+                        </div>
 
-                <a href=""><img src="" alt="prev"></a>
+                        <div class="link-column">
+                            <h3>Mens store</h3>
+                            <ul>
+                                <li><a href="">Lorem ipsum</a></li>
+                                <li><a href="">Pellentesque eu</a></li>
+                                <li><a href="">Mauris pretium</a></li>
+                                <li><a href="">Nam elementum</a></li>
+                                <li><a href="">Aliquam tortor</a></li>
+                            </ul>
+                        </div>
 
-                <div>
-                    <img src="" alt="image">
-                    <h3>Branded shoe</h3>
-                    <span>$300</span>
-                    <a href="#">Buy now</a>
-                </div>                
-                <!-- TODO add the rest two categories after approve -->
+                        <div class="link-column">
+                            <h3>Women store</h3>
+                            <ul>
+                                <li><a href="">Lorem ipsum</a></li>
+                                <li><a href="">Pellentesque eu</a></li>
+                                <li><a href="">Mauris pretium</a></li>
+                                <li><a href="">Nam elementum</a></li>
+                                <li><a href="">Aliquam tortor</a></li>
+                            </ul>
+                        </div>
 
-                <a href=""><img src="" alt="next"></a>
-
-            </div>
-
-            <div>
-                <h2>Featured products</h2>
-            </div>
-
-            <div>
-                <div>
-                    <img src="" alt="image">
-                    <h3>Branded shoe</h3>
-                    <span>$300</span>
-                    <a href="#">Buy now</a>
+                        <div class="link-column">
+                            <h3>Quick links</h3>
+                            <ul>
+                                <li><a href="">Lorem ipsum</a></li>
+                                <li><a href="">Pellentesque eu</a></li>
+                                <li><a href="">Mauris pretium</a></li>
+                                <li><a href="">Nam elementum</a></li>
+                                <li><a href="">Aliquam tortor</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                
-                <!-- TODO add the rest products after approve -->
-
-            </div>
+                <div id="copyright">
+                    <div class="group">
+                        <p>Copyright &copy; 2015 Intership Task No.2</p>
+                    </div>
+                </div>
+            </footer>
         </div>
-
-        <footer>
-            <div>
-                <div>
-                    <h3>Featured sale</h3>
-                    <ul>
-                        <li>Lorem ipsum</li>
-                        <li>Pellentesque eu</li>
-                        <li>Mauris pretium</li>
-                        <li>Nam elementum</li>
-                        <li>Aliquam tortor</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3>Mens store</h3>
-                    <ul>
-                        <li>Lorem ipsum</li>
-                        <li>Pellentesque eu</li>
-                        <li>Mauris pretium</li>
-                        <li>Nam elementum</li>
-                        <li>Aliquam tortor</li>
-                    </ul>
-                </div>
-
-                <!-- TODO add two more columns after approve -->
-
-            </div>
-            <div>Copyright &copy; 2015 Intership Task No.2</div>
-        </footer>
     </body>
 </html>
