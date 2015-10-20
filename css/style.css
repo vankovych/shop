@@ -1,5 +1,3 @@
-/**/
-
 /* COLORS
 
 cyan light 		#4ccfc1
@@ -13,10 +11,6 @@ gray light		#e1e1e1
 white			#ffffff
 
 */
-
-body {
-
-}
 
 header, nav, footer, #content {
 	width: 100%;
@@ -116,14 +110,10 @@ nav ul li {
 }
 
 nav ul li a {
-    /*display: block;*/
     margin: 0 10px;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    /*font-weight: bold;
-    padding: 15px;
-    border-left: solid 1px #333;*/
 }
 
 /* ------------------------------
@@ -140,9 +130,14 @@ nav ul li a {
 	background-color: #39c3b4;
 }
 
-/* ------------------------------
-    Content
------------------------------- */
+.description {
+	float: right;
+	width: 400px;
+}
+
+.description p {
+	margin-bottom: 30px;
+}
 
 .btn-shop-big {
 	color: #ffffff;
@@ -154,19 +149,12 @@ nav ul li a {
 	padding: 10px 25px;
 }
 
-#desc {
-	float: right;
-	width: 500px;
-}
-
 /* ------------------------------
     Carousel
 ------------------------------ */
 
 #carousel-buttons {
-	width: 100%;
 	text-align: center;
-	background-color: #f0f;
 	margin-bottom: 35px;
 }
 
@@ -184,21 +172,34 @@ nav ul li a {
 	opacity: 0.4;
 }
 
-#categories .row div { /* !!!!!!!!!!! */
-	float: left;
-}
-
 /* ------------------------------
     Featured categories
 ------------------------------ */
 .carousel-nav {
 	float: left;
+	margin: 0 30px;
+	height: 190px;
 }
 
 .category {
-	width: 320px;
-	text-align: center;
+	width: 300px;
 	float: left;
+	height: 190px;
+}
+
+.category img {
+	float: left;
+}
+
+.title-btn {
+	float: left;
+	text-align: left;
+	margin: 35px 0 0 10px;
+}
+
+.category-middle {
+	border-right: 1px solid	#e1e1e1;
+	border-left: 1px solid	#e1e1e1;
 }
 
 .btn-shop {
@@ -276,6 +277,12 @@ nav ul li a {
 /* ------------------------------
     Global
 ------------------------------ */
+.group {
+	width: 1024px;
+	margin: 0 auto;
+    zoom: 1;
+}
+
 .group:before,
 .group:after {
     content: "";
@@ -284,10 +291,4 @@ nav ul li a {
 
 .group:after {
     clear: both;
-}
-
-.group {
-	width: 1024px;
-	margin: 0 auto;
-    zoom: 1;
 }
