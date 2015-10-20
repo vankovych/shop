@@ -6,6 +6,8 @@
 
         <link href="css/vendor/normalize.css" rel="stylesheet" type="text/css">
         <link href="css/style.css" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     </head>
     <body>
         <div id="container">
@@ -30,7 +32,6 @@
                         </a>
                     </div>
                 </div>
-
             </header>
 
             <nav>
@@ -65,11 +66,11 @@
 
                         <!-- carousel controls -->
                         <div id="carousel-buttons">
-                            <div class="carousel-btn"><span></span></div>
-                            <div class="carousel-btn"><span></span></div>
-                            <div class="carousel-btn"><span></span></div>
-                            <div class="carousel-btn active"><span></span></div>
-                            <div class="carousel-btn"><span></span></div>
+                            <div class="carousel-btn"></div>
+                            <div class="carousel-btn"></div>
+                            <div class="carousel-btn"></div>
+                            <div class="carousel-btn active"></div>
+                            <div class="carousel-btn"></div>
                         </div>
 
                     </div>
@@ -77,23 +78,34 @@
 
                 <!-- top categories -->
                 <div id="categories">
-                    <div class="group">
-                        <div>
-                            <a href="">
-                                <img src="" alt="prev">
+                    <div class="group" id="featured-categories">
+                        <div class="carousel-nav">
+                            <a href="#">
+                                <img src="images/prev.png" alt="prev">
                             </a>
                         </div>
 
-                        <div>
-                            <img src="" alt="image">
-                            <h3>Branded shoes</h3>
-                            <span>$300</span>
-                            <a href="#" class="">Buy now</a>
-                        </div>                                     
+                        <div class="category">
+                            <img src="images/products/shoes.png" alt="shoes">
+                            <h3>Branded<br>shoes</h3>
+                            <a href="#" class="btn-shop">Shop</a>
+                        </div>
+
+                        <div class="category">
+                            <img src="images/products/tshirt-print.png" alt="tshirt-print">
+                            <h3>Branded<br>tshirts</h3>
+                            <a href="#" class="btn-shop">Shop</a>
+                        </div>
+
+                        <div class="category">
+                            <img src="images/products/pants.png" alt="pants">
+                            <h3>Branded<br>shoes</h3>
+                            <a href="#" class="btn-shop">Shop</a>
+                        </div>                         
 
                         <div>
-                            <a href="">
-                                <img src="" alt="next">
+                            <a href="#">
+                                <img src="images/next.png" alt="next">
                             </a>
                         </div>
                     </div>
@@ -102,18 +114,55 @@
                 <div id="featured-header">
                     <div class="group">
                         <h2>Featured products</h2>
-                    </div>                    
+                    </div>
                 </div>
 
                 <div class="group">
                     <div>
-                        <img src="" alt="image">
-                        <h3>Branded shoe</h3>
-                        <span>$300</span>
-                        <button type="button">Buy now</button>
+                        <div class="product">
+                            <img src="images/products/shoes-red.png" alt="shoes-red">
+                            <h3>Branded shoe</h3>
+                            <span>$300</span>
+                            <button type="button" class="btn-buynow">Buy now</button>
+                        </div>
+
+                        <div class="product">
+                            <img src="images/products/tshirt-dark.png" alt="tshirt">
+                            <h3>Branded shoe</h3>
+                            <span>$300</span>
+                            <button type="button" class="btn-buynow">Buy now</button>
+                        </div>
+
+                        <div class="product">
+                            <img src="images/products/tshirt-gray.png" alt="tshirt-gray">
+                            <h3>Branded shoe</h3>
+                            <span>$300</span>
+                            <button type="button" class="btn-buynow">Buy now</button>
+                        </div>
                     </div>
 
-                    <!-- TODO add the rest products after approve -->
+                    <div>
+                        <div class="product">
+                            <img src="images/products/portmone.png" alt="portmone">
+                            <h3>Branded shoe</h3>
+                            <span>$300</span>
+                            <button type="button" class="btn-buynow">Buy now</button>
+                        </div>
+
+                        <div class="product">
+                            <img src="images/products/bag.png" alt="bag">
+                            <h3>Branded shoe</h3>
+                            <span>$300</span>
+                            <button type="button" class="btn-buynow">Buy now</button>
+                        </div>
+
+                        <div class="product">
+                            <img src="images/products/pants.png" alt="pants">
+                            <h3>Branded shoe</h3>
+                            <span>$300</span>
+                            <button type="button" class="btn-buynow">Buy now</button>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -122,46 +171,58 @@
                 <div id="link-list">
                     <div class="group">
                         <div class="link-column">
-                            <h3>Featured sale</h3>
+                            <h4>Featured sale</h4>
                             <ul>
-                                <li><a href="">Lorem ipsum</a></li>
-                                <li><a href="">Pellentesque eu</a></li>
-                                <li><a href="">Mauris pretium</a></li>
-                                <li><a href="">Nam elementum</a></li>
-                                <li><a href="">Aliquam tortor</a></li>
+                                <li><a href="#">Lorem ipsum</a></li>
+                                <li><a href="#">Pellentesque eu</a></li>
+                                <li><a href="#">Mauris pretium</a></li>
+                                <li><a href="#">Nam elementum</a></li>
+                                <li><a href="#">Aliquam tortor</a></li>
+                                <li><a href="#">Lorem ipsum</a></li>
+                                <li><a href="#">Pellentesque eu</a></li>
+                                <li><a href="#">Mauris pretium</a></li>
                             </ul>
                         </div>
 
                         <div class="link-column">
-                            <h3>Mens store</h3>
+                            <h4>Mens store</h4>
                             <ul>
-                                <li><a href="">Lorem ipsum</a></li>
-                                <li><a href="">Pellentesque eu</a></li>
-                                <li><a href="">Mauris pretium</a></li>
-                                <li><a href="">Nam elementum</a></li>
-                                <li><a href="">Aliquam tortor</a></li>
+                                <li><a href="#">Lorem ipsum</a></li>
+                                <li><a href="#">Pellentesque eu</a></li>
+                                <li><a href="#">Mauris pretium</a></li>
+                                <li><a href="#">Nam elementum</a></li>
+                                <li><a href="#">Aliquam tortor</a></li>
+                                <li><a href="#">Lorem ipsum</a></li>
+                                <li><a href="#">Pellentesque eu</a></li>
+                                <li><a href="#">Mauris pretium</a></li>
                             </ul>
                         </div>
 
                         <div class="link-column">
-                            <h3>Women store</h3>
+                            <h4>Women store</h4>
                             <ul>
-                                <li><a href="">Lorem ipsum</a></li>
-                                <li><a href="">Pellentesque eu</a></li>
-                                <li><a href="">Mauris pretium</a></li>
-                                <li><a href="">Nam elementum</a></li>
-                                <li><a href="">Aliquam tortor</a></li>
+                                <li><a href="#">Lorem ipsum</a></li>
+                                <li><a href="#">Pellentesque eu</a></li>
+                                <li><a href="#">Mauris pretium</a></li>
+                                <li><a href="#">Nam elementum</a></li>
+                                <li><a href="#">Aliquam tortor</a></li>
+                                <li><a href="#">Lorem ipsum</a></li>
+                                <li><a href="#">Pellentesque eu</a></li>
+                                <li><a href="#">Mauris pretium</a></li>
                             </ul>
                         </div>
 
                         <div class="link-column">
-                            <h3>Quick links</h3>
+                            <h4>Quick links</h4>
                             <ul>
-                                <li><a href="">Lorem ipsum</a></li>
-                                <li><a href="">Pellentesque eu</a></li>
-                                <li><a href="">Mauris pretium</a></li>
-                                <li><a href="">Nam elementum</a></li>
-                                <li><a href="">Aliquam tortor</a></li>
+                                <li><a href="#">Lorem ipsum</a></li>
+                                <li><a href="#">Pellentesque eu</a></li>
+                                <li><a href="#">Mauris pretium</a></li>
+                                <li><a href="#">Nam elementum</a></li>
+                                <li><a href="#">Aliquam tortor</a></li>
+                                <li><a href="#">Lorem ipsum</a></li>
+                                <li><a href="#">Pellentesque eu</a></li>
+                                <li><a href="#">Mauris pretium</a></li>
                             </ul>
                         </div>
                     </div>

@@ -33,6 +33,11 @@ h2 {
 }
 
 h3 {
+	color: #afafaf;
+	text-transform: uppercase;
+}
+
+h4 {
 	color: #ffffff;
 	text-transform: uppercase;
 }
@@ -41,20 +46,11 @@ p {
 	color: #ffffff;
 }
 
-#slider{
-	background-color: #39c3b4;
-}
-
-#featured-header {
-	height: 65px;
-	background-color: #39c3b4;
-}
-
 /* ------------------------------
     Header
 ------------------------------ */
 
-header .group div { /* !!!!!!!!!!! */
+#logo, #search-form, #cart-link {
 	float:left;
 }
 
@@ -109,17 +105,17 @@ nav {
 	background-color: #4ccfc1;
 }
 
-nav ul{
+nav ul {
     margin: 7 0;
     padding: 0;
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
     float: left;    
 }
 
-nav ul li a{
+nav ul li a {
     /*display: block;*/
     margin: 0 10px;
     color: #fff;
@@ -128,6 +124,20 @@ nav ul li a{
     /*font-weight: bold;
     padding: 15px;
     border-left: solid 1px #333;*/
+}
+
+/* ------------------------------
+    Slider
+------------------------------ */
+
+#slider {
+	background-color: #39c3b4;
+	padding-top: 60px;
+}
+
+#featured-header {
+	height: 65px;
+	background-color: #39c3b4;
 }
 
 /* ------------------------------
@@ -140,7 +150,7 @@ nav ul li a{
 	text-transform: uppercase;
 	font-size: 20px;
 	border: 3px solid #ffffff;
-	border-radius: 5px;
+	border-radius: 7px;
 	padding: 10px 25px;
 }
 
@@ -166,14 +176,11 @@ nav ul li a{
 	cursor: pointer;
 	float: left;
 	margin: 0 10px;
-}
-
-.carousel-btn {
 	background-image: url('../images/carousel-btn.png');
 	background-repeat: no-repeat;
 }
 
-.carousel-btn.active {
+.carousel-btn.active, .carousel-btn:hover {
 	opacity: 0.4;
 }
 
@@ -182,16 +189,54 @@ nav ul li a{
 }
 
 /* ------------------------------
-    
+    Featured categories
 ------------------------------ */
+.carousel-nav {
+	float: left;
+}
+
+.category {
+	width: 320px;
+	text-align: center;
+	float: left;
+}
 
 .btn-shop {
+	display: inline-block;
+	height: 32px;
 	color: #ffffff;
+	background-color: #3cc395;
+	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 20px;
-	border-radius: 5px;
-	padding: 10px 25px;
+	border-radius: 2px;
+	padding: 0px 15px;
+}
+
+/* ------------------------------
+    Featured products
+------------------------------ */
+.product {
+	height: 255px;
+	width: 255px;
+	margin: 25px;
+	border: 2px solid #e4e4e4;
+	border-bottom: 5px solid #3cc395;
+	text-align: center;
+	float: left;
+}
+
+.btn-buynow {
+	display: inline-block;
+	height: 32px;
+	color: #ffffff;
+	background-color: #3cc395;
+	border-width: 0;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 2px;
+	padding: 9px 15px;
 }
 
 /* ------------------------------
@@ -199,10 +244,9 @@ nav ul li a{
 ------------------------------ */
 #link-list {
 	background-color: #39c3b4;
-	padding-top: 40px;
 }
 
-.link-column{
+.link-column {
 	float: left;
 	margin-right: 100px;
 }
@@ -213,12 +257,12 @@ nav ul li a{
     padding-left: 5px;
 }
 
-#link-list ul li{
+#link-list ul li {
     list-style: none;
     margin: 10px 0;
 }
 
-#link-list ul li a{
+#link-list ul li a {
     color: #fff;
     text-decoration: none;
 }
