@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Shop</title>
+        <title>Aditii</title>
         <meta charset="UTF-8">
 
         <link href="css/vendor/normalize.css" rel="stylesheet" type="text/css">
@@ -11,68 +11,103 @@
     </head>
     <body>
         <div id="container">
-            <header>
-                <!-- logo, search, cart -->
-                <div class="group">
-                    <div id="logo">
-                        <a href="#">
-                            <img src="images/logo.png" alt="Aditii">
-                        </a>
-                    </div>
-
-                    <div id="search-form">
-                        <input type="text" class="search-input">
-                        <button type="button" class="btn-search"></button>
-                    </div>
-
-                    <div id="cart-link">
-                        <a href="#">
-                            <img src="images/cart.png" alt="Cart">
-                            <span id="price">$300</span>
-                        </a>
-                    </div>
+            <header class="group">
+                <div id="logo">
+                    <a href="#">
+                        <img src="images/logo.png" alt="Aditii">
+                    </a>
                 </div>
+
+                <div id="search-form">
+                    <input type="text" class="search-input">
+                    <button type="button" class="btn-search"></button>
+                </div>
+
+                <div id="cart">$300</div>
             </header>
 
             <nav>
                 <div class="group">
                     <ul>
-                        <li><a href="#">Home</a>|</li>
-                        <li><a href="#">Sale</a>|</li>
-                        <li><a href="#">Handbags</a>|</li>
-                        <li><a href="#">Wallets</a>|</li>
-                        <li><a href="#">Accessories</a>|</li>
-                        <li><a href="#">Mens store</a>|</li>
-                        <li><a href="#">Shoes</a>|</li>
-                        <li><a href="#">Vintage</a>|</li>
-                        <li><a href="#">Services</a>|</li>
-                        <li><a href="#">Contact us</a></li>
+                        <li>
+                            <a href="#">Home</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="#">Sale</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="#">Handbags</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="#">Wallets</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="#">Accessories</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="#">Mens store</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="#">Shoes</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="#">Vintage</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
                     </ul>
                 </div>
             </nav>            
 
             <div id="content">
-                <div id="slider">
+                <div id="featured">
                     <div class="group">
-                        <!-- top goods -->
                         <div>
-                            <img src="images/products/tshirt-big.png" alt="image">
-                            <div class="description">
-                                <h1>Cowhide<br>standard crew</h1>
-                                <p>White colorued, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit.</p>
-                                <a href="#" class="btn-shop-big">Shop now</a>
+                            <!-- top goods -->
+                            <div class="clearfix">
+                                <div class="img-wrapper">
+                                    <img src="images/products/tshirt-big.png" alt="tshirt-big">
+                                </div>                            
+                                <div class="description">
+                                    <h1>Cowhide<br>standard crew</h1>
+                                    <p>White colorued, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit.</p>
+                                    <a href="#" class="btn-shop-large">Shop now</a>
+                                    
+                                    <!-- carousel controls -->
+                                    <div id="carousel-buttons">
+                                        <div class="carousel-btn">
+                                            <span></span>
+                                        </div>
+                                        <div class="carousel-btn">
+                                            <span></span>
+                                        </div>
+                                        <div class="carousel-btn">
+                                            <span></span>
+                                        </div>
+                                        <div class="carousel-btn active">
+                                            <span></span>
+                                        </div>
+                                        <div class="carousel-btn">
+                                            <span></span>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
-
-                        <!-- carousel controls -->
-                        <div id="carousel-buttons">
-                            <div class="carousel-btn"></div>
-                            <div class="carousel-btn"></div>
-                            <div class="carousel-btn"></div>
-                            <div class="carousel-btn active"></div>
-                            <div class="carousel-btn"></div>
-                        </div>
-
                     </div>
                 </div>
 
