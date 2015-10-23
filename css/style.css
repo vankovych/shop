@@ -35,17 +35,28 @@ h1 {
 
 h2 {
 	color: #ffffff;
+	font-size: 31px;
+	line-height: 25px;
 	font-family: "BebasNeue", Verdana, Tahoma;
+	font-weight: lighter;
+	margin: 0;
 }
 
 h3 {
 	color: #afafaf;
 	font-family: "BebasNeue", Verdana, Tahoma;
+	font-size: 27px;
+	line-height: 25px;
+	font-weight: lighter;
 }
 
 h4 {
 	color: #ffffff;
 	font-family: "BebasNeue", Verdana, Tahoma;
+	font-size: 27px;
+	line-height: 25px;
+	font-weight: lighter;
+	margin: 0;
 }
 
 p {
@@ -107,7 +118,7 @@ header {
 nav {
 	height: 35px;
 	color: #ffffff;
-	background-color: #4ccfc1;
+	background: #4ccfc1;	
 }
 
 nav ul {
@@ -143,11 +154,12 @@ nav span {
 ------------------------------ */
 
 #featured {
-	background-color: #39c3b4;
-	padding: 60px 0 40px 0;
+	background: #39c3b4;
+	padding: 60px 0 0 0;	
+	/*height: 445;*/
 }
 
-.img-wrapper {
+.slider-img-wrapper {
 	width: 450px;
 	height: 350px;
 	text-align: center;
@@ -185,12 +197,12 @@ nav span {
 	margin-left: 4px;
 }
 
-#carousel-buttons {
-	margin: 60px 0;
-	padding: 0 10px;
+#slider-buttons {
+	margin: 0;
+	padding: 60px 10px 41px 10px;
 }
 
-.carousel-btn span {	
+.slider-btn span {
 	width: 9px;
 	height: 9px;
 	border-radius: 4px;
@@ -200,114 +212,212 @@ nav span {
 	float: left;
 }
 
-.carousel-btn.active, .carousel-btn:hover {
+.slider-btn.active, .slider-btn:hover {
 	opacity: 0.4;
+}
+
+#content {
+	padding-bottom: 20px;
 }
 
 /* ------------------------------
     Featured categories
 ------------------------------ */
-#featured-header {
-	height: 65px;
-	background-color: #39c3b4;
+#featured-categories {
+	position: relative;
 }
 
-.carousel-nav {
-	float: left;
-	margin: 0 30px;
-	height: 190px;
+.carousel-btn {
+	margin: 0;
+}
+
+.prev1 {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border: none;
+	border-left: 1px solid #afafaf;
+	transform: rotate(30deg);
+}
+
+.prev2 {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border: none;
+	border-left: 1px solid #afafaf;
+	transform: rotate(60deg);
 }
 
 .category {
-	width: 300px;
+	width: 340px;
 	float: left;
 	height: 190px;
+	border-left: 1px solid	#e1e1e1;
 }
 
-.category img {
+.category h3{
+	margin: 0 0 23px 0;
+}
+
+.category:first-child {
+	border-left: none;	
+}
+
+.img-wrapper {
+	width: 200px;
+	height: 150px;
+	text-align: center;		
+	white-space: nowrap;	
+	padding-top: 10px;
+}
+
+.category-img-wrapper {
 	float: left;
+}
+
+.wrapper-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.img-wrapper img {
+	vertical-align: middle;
+	max-width: 170px;
+	max-height: 150px;	
 }
 
 .title-btn {
 	float: left;
 	text-align: left;
-	margin: 35px 0 0 10px;
-}
-
-.category-middle {
-	border-right: 1px solid	#e1e1e1;
-	border-left: 1px solid	#e1e1e1;
+	padding-top: 50px;
 }
 
 .btn-shop {
-	display: inline-block;
 	height: 32px;
 	color: #ffffff;
-	background-color: #3cc395;
+	background: #3cc395;
+	font-family: "BebasNeue", Verdana, Tahoma;
+	font-size: 19px;
+	line-height: 19px;	
 	text-align: center;
 	text-decoration: none;
-	text-transform: uppercase;
-	border-radius: 2px;
-	padding: 0px 15px;
+	border-radius: 3px;
+	padding: 6px 15px;
 }
 
 /* ------------------------------
     Featured products
 ------------------------------ */
+.featured-header {
+	background: #39c3b4;
+	padding: 23px 0 20px 115px;
+}
+
+.products-row {
+	padding-top: 45px;
+	padding-left: 60px;
+}
+
 .product {
-	height: 255px;
-	width: 255px;
-	margin: 25px;
+	height: 260px;
+	width: 255px;	
 	border: 2px solid #e4e4e4;
-	border-bottom: 5px solid #3cc395;
+	border-bottom: none;
 	text-align: center;
 	float: left;
+	margin: 0 50px 50px 0;
+	position: relative;
+}
+
+.product h3 {
+	margin: 0 0 10px 0;
+}
+
+.product-price {
+	color: #afafaf;
+	font-family: "BebasNeue", Verdana, Tahoma;
+	font-size: 27px;
+	line-height: 25px;
+	font-weight: lighter;	
 }
 
 .btn-buynow {
 	display: inline-block;
 	height: 32px;
 	color: #ffffff;
-	background-color: #3cc395;
-	border-width: 0;
+	background: #3cc395;
+	border: none;
+	border-radius: 3px;
 	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	border-radius: 2px;
-	padding: 9px 15px;
+	font-family: "BebasNeue", Verdana, Tahoma;
+	font-size: 19px;
+	line-height: 19px;		
+	padding: 5px 10px;				
+	margin-left: 10px;
+}
+
+.product-bottom {
+	display: block;
+    position: absolute;
+    width: 100%;
+    border-bottom: 6px solid #3CC395;
+    left: 0px;
+    bottom: 0px;
 }
 
 /* ------------------------------
     Footer
 ------------------------------ */
-#link-list {
-	background-color: #39c3b4;
+#site-map {
+	padding-top: 40px;
+	padding-bottom: 30px;
+	/*padding-right: 100px;*/
+	/*padding: 40px 185px 30px 185px;*/
+	background: #39c3b4;
 }
 
-.link-column {
+.site-map-column {
+	/*padding-left: 60px;*/
+	width: 25%;
 	float: left;
-	margin-right: 100px;
+	box-sizing: border-box;
 }
 
-#link-list ul {
+#site-map ul {
 	margin: 0;
-    padding: 0;
+    padding: 10px 0;
     padding-left: 5px;
 }
 
-#link-list ul li {
+#site-map ul li {
     list-style: none;
-    margin: 10px 0;
+    font-size: 15px;
+	line-height: 28px;
+	font-family: "MyriadPro", Verdana, Tahoma;	
 }
 
-#link-list ul li a {
+#site-map a {
     color: #fff;
     text-decoration: none;
 }
 
+#site-map a:hover {    
+    text-decoration: underline;
+}
+
 #copyright {
-	background-color: #2da89b;
+	background: #2da89b;
 	text-align: center;
+	padding: 5px 0 15px;
+}
+
+#copyright p {
+	font-size: 15px;
+	line-height: 28px;
+	font-family: "MyriadPro", Verdana, Tahoma;	
+	margin: 0;
 }
 
 
@@ -322,7 +432,7 @@ nav span {
 .group:before,
 .group:after {
     content: "";
-    display: table;        
+    display: table;
 }
 
 .group:after {
@@ -341,6 +451,7 @@ nav span {
 
 /*
 
-Order of properties?
+Order of properties? https://css-tricks.com/poll-results-how-do-you-order-your-css-properties/
+Sublime ver?
 
 */

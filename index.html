@@ -11,19 +11,21 @@
     </head>
     <body>
         <div id="container">
-            <header class="group">
-                <div id="logo">
-                    <a href="#">
-                        <img src="images/logo.png" alt="Aditii">
-                    </a>
-                </div>
+            <header>
+                <div class="group">
+                    <div id="logo">
+                        <a href="#">
+                            <img src="images/logo.png" alt="Aditii">
+                        </a>
+                    </div>
 
-                <div id="search-form">
-                    <input type="text" class="search-input">
-                    <button type="button" class="btn-search"></button>
-                </div>
+                    <div id="search-form">
+                        <input type="text" class="search-input">
+                        <button type="button" class="btn-search"></button>
+                    </div>
 
-                <div id="cart">$300</div>
+                    <div id="cart">$300</div>
+                </div>
             </header>
 
             <nav>
@@ -75,61 +77,64 @@
             <div id="content">
                 <div id="featured">
                     <div class="group">
-                        <div>
-                            <!-- top goods -->
-                            <div class="clearfix">
-                                <div class="img-wrapper">
-                                    <img src="images/products/tshirt-big.png" alt="tshirt-big">
-                                </div>                            
-                                <div class="description">
-                                    <h1>Cowhide<br>standard crew</h1>
-                                    <p>White colorued, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit.</p>
-                                    <a href="#" class="btn-shop-large">Shop now</a>
-                                    
-                                    <!-- carousel controls -->
-                                    <div id="carousel-buttons">
-                                        <div class="carousel-btn">
-                                            <span></span>
-                                        </div>
-                                        <div class="carousel-btn">
-                                            <span></span>
-                                        </div>
-                                        <div class="carousel-btn">
-                                            <span></span>
-                                        </div>
-                                        <div class="carousel-btn active">
-                                            <span></span>
-                                        </div>
-                                        <div class="carousel-btn">
-                                            <span></span>
-                                        </div>
+                        <!-- top goods -->
+                        <div class="clearfix">
+                            <div class="slider-img-wrapper">
+                                <img src="images/products/tshirt-big.png" alt="tshirt-big">
+                            </div>                            
+                            <div class="description">
+                                <h1>Cowhide<br>standard crew</h1>
+                                <p>White colorued, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit.</p>
+                                <a href="#" class="btn-shop-large">Shop now</a>
+                                
+                                <!-- slider controls -->
+                                <div id="slider-buttons">
+                                    <div class="slider-btn">
+                                        <span></span>
                                     </div>
-
+                                    <div class="slider-btn">
+                                        <span></span>
+                                    </div>
+                                    <div class="slider-btn">
+                                        <span></span>
+                                    </div>
+                                    <div class="slider-btn active">
+                                        <span></span>
+                                    </div>
+                                    <div class="slider-btn">
+                                        <span></span>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- top categories -->
-                <div id="categories">
+                <div id="carousel">
                     <div class="group" id="featured-categories">
-                        <div class="carousel-nav">
-                            <a href="#">
-                                <img src="images/prev.png" alt="prev">
-                            </a>
+                        <div class="carousel-btn">
+                            <div class="prev1"></div>
+                            <div class="prev2"></div>
                         </div>
 
                         <div class="category">
-                            <img src="images/products/shoes.png" alt="shoes">
+                            <div class="img-wrapper category-img-wrapper">
+                                <span class="wrapper-helper"></span>
+                                <img src="images/products/shoes.png">
+                            </div>
                             <div class="title-btn">
                                 <h3>Branded<br>shoes</h3>
                                 <a href="#" class="btn-shop">Shop</a>
                             </div>
                         </div>
 
-                        <div class="category category-middle">
-                            <img src="images/products/tshirt-print.png" alt="tshirt-print">
+                        <div class="category">
+                            <div class="img-wrapper category-img-wrapper">
+                                <span class="wrapper-helper"></span>
+                                <img src="images/products/tshirt-print.png">
+                            </div>
                             <div class="title-btn">
                                 <h3>Branded<br>tshirts</h3>
                                 <a href="#" class="btn-shop">Shop</a>
@@ -137,7 +142,10 @@
                         </div>
 
                         <div class="category">
-                            <img src="images/products/pants.png" alt="pants">
+                            <div class="img-wrapper category-img-wrapper">
+                                <span class="wrapper-helper"></span>
+                                <img src="images/products/pants.png">
+                            </div>
                             <div class="title-btn">
                                 <h3>Branded<br>shoes</h3>
                                 <a href="#" class="btn-shop">Shop</a>
@@ -145,73 +153,93 @@
                         </div>
 
                         <div>
-                            <a href="#">
-                                <img src="images/next.png" alt="next">
-                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div id="featured-header">
+                <div class="featured-header">
                     <div class="group">
                         <h2>Featured products</h2>
                     </div>
                 </div>
 
                 <div class="group">
-                    <div>
+                    <div class="products-row">
                         <div class="product">
-                            <img src="images/products/shoes-red.png" alt="shoes-red">
+                            <div class="img-wrapper">
+                                <span class="wrapper-helper"></span>
+                                <img src="images/products/shoes-red.png">
+                            </div>                            
                             <h3>Branded shoe</h3>
-                            <span>$300</span>
+                            <span class="product-price">$300</span>
                             <button type="button" class="btn-buynow">Buy now</button>
+                            <span class="product-bottom"></span>
                         </div>
 
                         <div class="product">
-                            <img src="images/products/tshirt-dark.png" alt="tshirt">
+                            <div class="img-wrapper">
+                                <span class="wrapper-helper"></span>
+                                <img src="images/products/tshirt-dark.png">
+                            </div>
                             <h3>Branded tees</h3>
-                            <span>$300</span>
+                            <span class="product-price">$300</span>
                             <button type="button" class="btn-buynow">Buy now</button>
+                            <span class="product-bottom"></span>
                         </div>
 
                         <div class="product">
-                            <img src="images/products/tshirt-gray.png" alt="tshirt-gray">
+                            <div class="img-wrapper">
+                                <span class="wrapper-helper"></span>
+                                <img src="images/products/tshirt-gray.png">
+                            </div>
                             <h3>Branded shoe</h3>
-                            <span>$300</span>
+                            <span class="product-price">$300</span>
                             <button type="button" class="btn-buynow">Buy now</button>
+                            <span class="product-bottom"></span>
                         </div>
                     </div>
 
-                    <div>
+                    <div class="products-row">
                         <div class="product">
-                            <img src="images/products/portmone.png" alt="portmone">
+                            <div class="img-wrapper">
+                                <span class="wrapper-helper"></span>
+                                <img src="images/products/portmone.png">
+                            </div>
                             <h3>Branded shoe</h3>
-                            <span>$300</span>
+                            <span class="product-price">$300</span>
                             <button type="button" class="btn-buynow">Buy now</button>
+                            <span class="product-bottom"></span>
                         </div>
 
                         <div class="product">
-                            <img src="images/products/bag.png" alt="bag">
+                            <div class="img-wrapper">
+                                <span class="wrapper-helper"></span>
+                                <img src="images/products/bag.png">
+                            </div>
                             <h3>Ems women bag</h3>
-                            <span>$300</span>
+                            <span class="product-price">$300</span>
                             <button type="button" class="btn-buynow">Buy now</button>
+                            <span class="product-bottom"></span>
                         </div>
 
                         <div class="product">
-                            <img src="images/products/pants.png" alt="pants">
+                            <div class="img-wrapper">
+                                <span class="wrapper-helper"></span>
+                                <img src="images/products/pants.png">
+                            </div>
                             <h3>Branded cargos</h3>
-                            <span>$300</span>
+                            <span class="product-price">$300</span>
                             <button type="button" class="btn-buynow">Buy now</button>
+                            <span class="product-bottom"></span>
                         </div>
                     </div>
-
                 </div>
             </div>
 
             <footer>                
-                <div id="link-list">
+                <div id="site-map">
                     <div class="group">
-                        <div class="link-column">
+                        <div class="site-map-column">
                             <h4>Featured sale</h4>
                             <ul>
                                 <li><a href="#">Lorem ipsum</a></li>
@@ -225,7 +253,7 @@
                             </ul>
                         </div>
 
-                        <div class="link-column">
+                        <div class="site-map-column">
                             <h4>Mens store</h4>
                             <ul>
                                 <li><a href="#">Lorem ipsum</a></li>
@@ -239,7 +267,7 @@
                             </ul>
                         </div>
 
-                        <div class="link-column">
+                        <div class="site-map-column">
                             <h4>Women store</h4>
                             <ul>
                                 <li><a href="#">Lorem ipsum</a></li>
@@ -253,7 +281,7 @@
                             </ul>
                         </div>
 
-                        <div class="link-column">
+                        <div class="site-map-column">
                             <h4>Quick links</h4>
                             <ul>
                                 <li><a href="#">Lorem ipsum</a></li>
@@ -268,6 +296,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div id="copyright">
                     <div class="group">
                         <p>Copyright &copy; 2015 Intership Task No.2</p>
