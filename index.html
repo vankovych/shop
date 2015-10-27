@@ -6,8 +6,12 @@
 
         <link href="css/vendor/normalize.css" rel="stylesheet" type="text/css">
         <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/slider.css" rel="stylesheet" type="text/css">
 
         <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+
+        <script src="js/vendor/jquery/jquery-2.1.4.min.js"></script>
+        <script src="js/app/slider.js"></script>
     </head>
     <body>
         <div id="container">
@@ -75,28 +79,46 @@
             </nav>            
 
             <div id="content">
-                <div id="slider">
+                <div id="slider-wrapper">
                     <div class="group">
-                        <!-- top goods -->
-                        <div class="clearfix">
-                            <div class="slider-img-wrapper">
-                                <img src="images/products/tshirt-big.png" alt="tshirt-big">
-                            </div>                            
-                            <div class="description">
-                                <h1>Cowhide<br>standard crew</h1>
-                                <p>White colorued, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit.</p>
-                                <a href="#" class="btn-shop-large">Shop now</a>
-                                
-                                <!-- slider controls -->
-                                <div class="slider-buttons">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span class="active"></span>
-                                    <span></span>
+                        <div class="bss-slides">
+
+                            <figure>
+                                <div class="img-wrapper">
+                                    <img src="images/products/tshirt-big.png" alt="tshirt-big">
                                 </div>
 
-                            </div>
+                                <div class="description">
+                                    <h1>Cowhide<br>standard crew</h1>
+                                    <p>White colorued, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit.</p>
+                                    <a href="#" class="btn-shop-large">Shop now</a>
+                                </div>
+                            </figure>
+
+                            <figure>
+                                <div class="img-wrapper">
+                                    <img src="images/products/shoes-big.png" alt="tshirt-big">
+                                </div>
+
+                                <div class="description">
+                                    <h1>Jordan<br>Rising High </h1>
+                                    <p>Black colorued, high, shoes for men by Air Jordan. This shoes are made of organic leather and comes in all sizes.</p>
+                                    <a href="#" class="btn-shop-large">Shop now</a>
+                                </div>
+                            </figure>
+                            
+                            <figure>
+                                <div class="img-wrapper">
+                                    <img src="images/products/tshirt-long.png" alt="tshirt-big">
+                                </div>
+
+                                <div class="description">
+                                    <h1>Gorilla<br>red sleeves</h1>
+                                    <p>Long-sleeved, printed T-shirt with gorilla for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit.</p>
+                                    <a href="#" class="btn-shop-large">Shop now</a>
+                                </div>
+                            </figure>                            
+
                         </div>
                     </div>
                 </div>
