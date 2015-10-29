@@ -12,6 +12,7 @@
 
         <script src="js/vendor/jquery/jquery-2.1.4.min.js"></script>
         <script src="js/app/slider.js"></script>
+        <script src="js/app/cart.js"></script>
     </head>
     <body>
         <div id="container">
@@ -28,7 +29,14 @@
                         <button type="button" class="btn-search"></button>
                     </div>
 
-                    <div id="cart">$300</div>
+                    <div class="cart-link">$300</div>
+
+                    <div class="cart-popup-wrapper">
+                        <div class="cart-popup">
+                            <span class="btn-close">&times;</span>
+                            <h3>Shopping cart empty</h3>
+                        </div>
+                    </div>                    
                 </div>
             </header>
 
@@ -106,7 +114,7 @@
                                     <a href="#" class="btn-shop-large">Shop now</a>
                                 </div>
                             </figure>
-                            
+
                             <figure>
                                 <div class="img-wrapper">
                                     <img src="images/products/tshirt-long.png" alt="tshirt-big">
@@ -125,46 +133,66 @@
 
                 <!-- top categories -->
                 <div id="carousel">
-                    <div class="group" id="featured-categories">
-                        <div class="carousel-btn">
-                            <div class="prev1"></div>
-                            <div class="prev2"></div>
-                        </div>
+                    <div class="group">
+                        <div class="crsl-wrapper-outer">
+                            <div class="crsl-wrapper">
 
-                        <div class="category">
-                            <div class="img-wrapper category-img-wrapper">
-                                <span class="wrapper-helper"></span>
-                                <img src="images/products/shoes.png">
-                            </div>
-                            <div class="title-btn">
-                                <h3>Branded<br>shoes</h3>
-                                <a href="#" class="btn-shop">Shop</a>
-                            </div>
-                        </div>
+                                <div class="crsl-item">
+                                    <div class="img-wrapper category-img-wrapper">
+                                        <span class="wrapper-helper"></span>
+                                        <img src="images/products/shoes.png">
+                                    </div>
+                                    <div class="title-btn">
+                                        <h3>Branded<br>shoes</h3>
+                                        <a href="#" class="btn-shop">Shop</a>
+                                    </div>
+                                </div>
 
-                        <div class="category">
-                            <div class="img-wrapper category-img-wrapper">
-                                <span class="wrapper-helper"></span>
-                                <img src="images/products/tshirt-print.png">
-                            </div>
-                            <div class="title-btn">
-                                <h3>Branded<br>tshirts</h3>
-                                <a href="#" class="btn-shop">Shop</a>
-                            </div>
-                        </div>
+                                <div class="crsl-item">
+                                    <div class="img-wrapper category-img-wrapper">
+                                        <span class="wrapper-helper"></span>
+                                        <img src="images/products/tshirt-print.png">
+                                    </div>
+                                    <div class="title-btn">
+                                        <h3>Branded<br>tshirts</h3>
+                                        <a href="#" class="btn-shop">Shop</a>
+                                    </div>
+                                </div>
 
-                        <div class="category">
-                            <div class="img-wrapper category-img-wrapper">
-                                <span class="wrapper-helper"></span>
-                                <img src="images/products/pants.png">
-                            </div>
-                            <div class="title-btn">
-                                <h3>Branded<br>shoes</h3>
-                                <a href="#" class="btn-shop">Shop</a>
-                            </div>
-                        </div>
+                                <div class="crsl-item">
+                                    <div class="img-wrapper category-img-wrapper">
+                                        <span class="wrapper-helper"></span>
+                                        <img src="images/products/pants.png">
+                                    </div>
+                                    <div class="title-btn">
+                                        <h3>Branded<br>shoes</h3>
+                                        <a href="#" class="btn-shop">Shop</a>
+                                    </div>
+                                </div>
 
-                        <div>
+                                <div class="crsl-item">
+                                    <div class="img-wrapper category-img-wrapper">
+                                        <span class="wrapper-helper"></span>
+                                        <img src="images/products/shoes.png">
+                                    </div>
+                                    <div class="title-btn">
+                                        <h3>Branded<br>shoes</h3>
+                                        <a href="#" class="btn-shop">Shop</a>
+                                    </div>
+                                </div>
+
+                                <div class="crsl-item">
+                                    <div class="img-wrapper category-img-wrapper">
+                                        <span class="wrapper-helper"></span>
+                                        <img src="images/products/tshirt-print.png">
+                                    </div>
+                                    <div class="title-btn">
+                                        <h3>Branded<br>tshirts</h3>
+                                        <a href="#" class="btn-shop">Shop</a>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>

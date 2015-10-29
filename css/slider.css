@@ -4,7 +4,7 @@
 
 #slider-wrapper {
     background: #39c3b4;
-    padding: 60px 0 0 0;
+    padding: 60px 0 35px 0;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2), 0px -1px 4px #32AC9D;	
 }
 
@@ -44,7 +44,7 @@
     padding: 0 5px;
     position: absolute;
     top: 0px;
-    left: 500px;
+    left: 450px;
     opacity: 0;
     transition: opacity 1.2s;
 }
@@ -88,8 +88,8 @@
 
 .bss-slides .slider-buttons {
     position: absolute;
-    top: 320px;
-    left: 510px;
+    top: 350px;
+    left: 465px;
 }
 
 .bss-slides .slider-buttons span {
@@ -132,4 +132,119 @@
 
 .bss-prev {
     left: 0;
+}
+
+/* ------------------------------
+    Carousel
+------------------------------ */
+
+#carousel {
+    position: relative;
+}
+
+.crsl-wrapper-outer {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 190px;
+    //border: 2px solid red;
+}
+
+.crsl-wrapper {
+    position: relative;
+    width: 3000px;
+    transform: translate3d(0px, 0px, 0px);
+    transition: all .3s;
+    //border: 2px solid yellow;
+}
+
+.crsl-item {
+    width: 340px;
+    float: left;
+    height: 190px;
+    border-left: 1px solid #e1e1e1;
+    //background: pink;
+}
+
+.crsl-item h3 {
+    margin: 0 0 23px 0;
+}
+
+.crsl-item:first-child {
+    border-left: none;	
+}
+
+.crsl-item .img-wrapper {
+    width: 200px;
+    height: 150px;
+    text-align: center;		
+    white-space: nowrap;	
+    padding-top: 10px;
+}
+
+.category-img-wrapper {
+    float: left;
+}
+
+.wrapper-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.crsl-item .img-wrapper img {
+    vertical-align: middle;
+    max-width: 170px;
+    max-height: 150px;	
+}
+
+.title-btn {
+    float: left;
+    text-align: left;
+    padding-top: 50px;
+}
+
+.btn-shop {
+    height: 32px;
+    color: #ffffff;
+    background: #3cc395;
+    font-size: 19px;
+    line-height: 19px;	
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 6px 15px;
+    transition: all 0.3s;
+}
+
+.btn-shop:hover {
+    color: #188D76;
+}
+
+.carousel-btn div {
+    position: absolute;
+    top: 75px;
+    z-index: 1;
+    background: #ffffff;
+    border: 2px solid #e1e1e1;
+    border-left: none;
+    border-bottom: none;
+    width: 50px;
+    height: 50px;
+    transition: all .2s;
+}
+
+.carousel-btn div:hover {
+    border-color: #afafaf;
+    cursor: pointer;
+}
+
+.crsl-prev {
+    left: 20px;
+    transform: rotate(225deg);    
+}
+
+.crsl-next {
+    right: 20px;
+    transform: rotate(45deg);
 }
