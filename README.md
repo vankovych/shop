@@ -7,17 +7,17 @@ Intership task
 
 ### Font update
 1. Import current project
-  i. Open https://icomoon.io/app/
-  ii. Click **Burger menu** > **Manage Projects** > **Import Project**
-  iii. Open project JSON file **ADD PATH**
-  iiii. Click **Load**
-2. Add new icons
-  i. In Set row click **Burger menu** > **Import to Set**
-  ii. Open new icons
-3. Generate updated font
-  i. On the bottom menu click **Generate Font**
-  ii. On the bottom menu click **Download**
-  iii. Replace files
+  1. Open https://icomoon.io/app/
+  1. Click **Burger menu** > **Manage Projects** > **Import Project**
+  1. Open project JSON file **ADD PATH**
+  1. Click **Load**
+1. Add new icons
+  1. In Set row click **Burger menu** > **Import to Set**
+  1. Open new icons
+1. Generate updated font
+  1. On the bottom menu click **Generate Font**
+  1. On the bottom menu click **Download**
+  1. Replace files
 
 ### Demo
 
